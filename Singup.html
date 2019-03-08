@@ -8,75 +8,127 @@
     <link rel="icon" type="image/ico" media="screen" href="icons/3d-glasses.png">
     <script src="main.js"></script>
 </head>
-<body>
+<body bgcolor= #196F3D >
     <form name="form3" action="#" method="POST">
-            <center><img src="icons/lock.png" width="100"></center>
+        <center><img src="icons/lock.png" width="100"></center>
            <center> <table aling="center" border="2">
-                    <tr>
-                        <td colspan="4">
-                            <CEnter><B><H2>formulario de Registro</H2></B></CEnter>
-                        </td>
+                        <tr bgcolor= "#183E26">
+                            <td colspan="4" >
+                            <CEnter><B><H2>FORMULARIO DE REGISTRO</H2></B></CEnter>
+                            </td>
                         </tr>
-                        <tr><td><b>Nombres:</b></td>
-                            <td><b><input type="text" placeholder="Nombre" minlength="5" maxlength="30" ></b></td>
+
+                        <tr>
+                            <td bgcolor= "#183E26"><b>Nombres:</b></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="text" placeholder="Nombre" minlength="5" maxlength="30" pattern="[A-Za-z]{4-16}" ></b></td>
                         </tr>
-                        </tr>
-                        <tr><td><b>Apellidos:</b></td>
-                            <td><b><input type="text" placeholder="Apellidos" minlength="5" maxlength="30" ></b></td>
-                        </tr>
-                        </tr>
-                        <tr><td><b>Nro. Identificacíon:</b></td>
-                            <td><b><input type="text" placeholder="Nro" minlength="5" maxlength="30" ></b></td>
-                        </tr>
-                        <tr><td><b>Tipo de Identificacion:</b></td>
-                            <td><select name="Tipos" ></select></td>
-                        </tr>
-                        </tr>
-                        <tr><td><b>Genero:</b></td>
-                            <td><b><input type="radio" name="Masculino"  value="Masculino" >Masculino</b><b><input type="radio" name="Masculino"  value="Femenino" >Femenino</b></td>
-                        </tr>
-                        </tr>
-                        <tr><td><b>Telefono:</b></td>
-                            <td><b><input type="text" placeholder="Telefono" minlength="5" maxlength="30" ></b></td>
-                        </tr>
-                        </tr>
-                                <tr><td><b>Celular:</b></td>
-                                    <td><b><input type="text" placeholder="Nombre" minlength="5" maxlength="30" ></b></td>
-                                </tr>
-                                </tr>
-                               
-                                </tr>
-                                <tr><td><b>Nombres:</b></td>
-                                    <td><b><input type="text" placeholder="Nombre" minlength="5" maxlength="30" ></b></td>
-                                </tr>
-                                </tr>
-                                <tr><td><b>Nombres:</b></td>
-                                    <td><b><input type="text" placeholder="Nombre" minlength="5" maxlength="30" ></b></td>
-                                </tr>
-                                </tr>
-                                <tr><td><b>Nombres:</b></td>
-                                    <td><b><input type="text" placeholder="Nombre" minlength="5" maxlength="30" ></b></td>
-                                </tr>
-                                </tr>
-                                <tr><td><b>Nombres:</b></td>
-                                    <td><b><input type="text" placeholder="Nombre" minlength="5" maxlength="30" ></b></td>
-                                </tr>
-                                </tr>
-                                <tr><td><b>Nombres:</b></td>
-                                    <td><b><input type="text" placeholder="Nombre" minlength="5" maxlength="30" ></b></td>
-                                </tr>
-                                </tr>
-                                <tr><td><b>Nombres:</b></td>
-                                    <td><b><input type="text" placeholder="Nombre" minlength="5" maxlength="30" ></b></td>
-                        </tr>
-                 
                         
+                        <tr>
+                            <td bgcolor= "#183E26"><b>Apellidos:</b></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="text" placeholder="Apellidos" minlength="5" maxlength="30" ></b></td>
+                        </tr>
+                        
+                        <tr>
+                            <td bgcolor= "#183E26"><b>Tipo de Identificacion:</b></td>
+                            <td bgcolor= "#fbfbfb"><select name="Tipos" >
+                                <option value="1">Cedula de Ciudadania</option>
+                                <option value="2">Tarjeta de Identidad</option>
+                                <option value="3">Pasaporte</option>
+                                <option value="4">Otros</option>
+                            </select></td>
+                        </tr>
+                        
+                        <tr>
+                                <td bgcolor= "#183E26"><b>Nro. Identificacíon:</b></td>
+                                <td bgcolor= "#fbfbfb"><b><input type="text" placeholder="Nro" minlength="5" maxlength="30" ></b></td>
+                        </tr>
+                        
+                        <tr>
+                            <td bgcolor= "#183E26"><b>Genero:</b></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="radio" name="Masculino"  value="Masculino" >Masculino</b><b><input type="radio" name="Masculino"  value="Femenino" >Femenino</b></td>
+                        </tr>
+                        
+                        <tr>
+                            <td bgcolor= "#183E26"><b>Telefono:</b></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="text" placeholder="Telefono" minlength="5" maxlength="8" ></b></td>
+                        </tr>
+                        
+                        <tr>
+                            <td bgcolor= "#183E26"><b>Celular:</b></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="text" placeholder="Celular" minlength="5" maxlength="20" ></b></td>
+                        </tr>
+                               
+                        <tr>
+                            <td bgcolor= "#183E26"><b>Departamento de Nac.:</b></td>
+                                    <td bgcolor= "#fbfbfb"><b>
+                                        <select name="departamentos" >
+                                            <option value="0"></option>
+                                            <option value="1">Amazonas</option>
+                                            <option value="2">Antioquia</option>
+                                            <option value="3">Arauca</option>
+                                            <option value="4">Atlántico</option>
+                                            <option value="5">Bolívar</option>
+                                            <option value="6">Boyacá</option>
+                                            <option value="7">Caldas</option>
+                                            <option value="8">Caquetá</option>
+                                            <option value="9"> Nariño</option>
+                                            <option value="10">Cundinamarca</option>
+                                        </select></b></td>
+                        </tr>
+                                
+                        <tr>
+                            <td bgcolor= "#183E26"><b>Ciudad de Nac.:</b></td>
+                                    <td bgcolor= "#fbfbfb"><b>
+                                        <select name="departamentos" >
+                                            <option value="0"></option>
+                                            <option value="1">Tunja</option>
+                                            <option value="2">Yopal</option>
+                                            <option value="3">Montería</option>
+                                            <option value="4">Puerto Inírida</option>
+                                            <option value="5">Neiva</option>
+                                            <option value="6">San José del Guaviare</option>
+                                            <option value="7">Riohacha</option>
+                                            <option value="8">Villavicencio</option>
+                                            <option value="9"> Pasto</option>
+                                            <option value="11">Bogotá</option>
+                                            <option value="12">Cartagena</option>
+                                            <option value="13">Popayán</option>
+                                            <option value="14">Manizales</option>
+                                            <option value="15">Mitú</option>
+                                            <option value="16">Cali</option>
+                                            <option value="17">Sincelejo</option>
+                                    </select></b></td>
+                        </tr>
+                                
+                        <tr>
+                            <td bgcolor= "#183E26"><b>Correo Electronico:</b></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="email" placeholder="user@....com" minlength="5" maxlength="30" id="email" ></b></td>
+                        </tr>
+                               
+                        <tr>
+                            <td bgcolor= "#183E26"><b>Contraseña:</b></td>
+                            <input name="pass" onblur="if(this.value=='') { this.value = 'Contraseña' }" 
+                            onfocus="if(this.value=='Contraseña') { this.value = '' }" type="password" maxlength="20" value="Contraseña" />
+                            <td bgcolor= "#fbfbfb"><b><input type="password" placeholder="password" minlength="5" maxlength="30" >
+                                <div style="margin-top:15px;">
+                                        <input style="margin-left:20px;" type="checkbox" id="mostrar_contrasena" title="clic para mostrar contraseña"/>
+                                        &nbsp;&nbsp;Mostrar Contraseña</div></b></td>
+                        </tr>
+                               
+                        <tr>
+                            <td bgcolor= "#183E26"><b>Confirmar Contraseña:</b></td>
+                                    <td bgcolor= "#fbfbfb"><b><input type="password" placeholder="Confirmar" minlength="5" maxlength="30" ></b></td>
+                        </tr>
+                               
+                        <tr>
+                            <td bgcolor= "#183E26"><b>Foto:</b></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="text" placeholder="Foto" minlength="5" maxlength="30" >
+                            <input name="arch" type="file" size="2mb"></b><br></td>
+                        </tr>
+                               
                     </tr>
             </center>        
-       
-        
-
-
+    
     </form>
     
 </body>
