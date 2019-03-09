@@ -1,13 +1,21 @@
 <html>
     <head>
+        <style>
+        input:valid{
+            background: green
+        }
+        input :invalid{
+            background: red;
+        }
+        </style>
        <title>
            Mi Tienda
        </title>
             <link rel="icon" type= "image/ico" href="icons/logo.png"/>
-    </head>
+               </head>
     <body bgcolor="#D0D3D4">
             <center><img src="images/logo.png" width="400" ></center>
-        <form name="form2" action="#" method="GET">
+        <form name="form2" action="validar.php" method="POST">
             <center>
                 <table aling="center" border="2">
                     <tr>
@@ -21,14 +29,14 @@
                                 <center><img src="icons/login.png" width="80"></center>
                                 <center><font size="12" color="black" face="wandertucker">login</font></center><br>
                                 <center><h1><b>usuario:</b></h1></center>
-                                <center><input type="text" name="User" placeholder="User@email.com" minlength="5" maxlength="30" required alt="10"></center><br><br>
+                                <center><input type="text" name="User" placeholder="User@email.com" minlength="5" maxlength="30" required ></center><br><br>
                             </td>
                         </tr>
                     </tr>
                     <tr bgcolor=#626567>
                         <td >
                             <center><h1><b>contaseña:</b></h1></center><br>
-                            <center><input type="password" name="pass" placeholder="Password" minlength="4" maxlength="20" required></center><br>
+                            <center><input type="password" name="pass" placeholder="Password" minlength="4" maxlength="20" pattern="[A-Za-z0-9]{5,15}" required></center><br>
                         </td>
                     </tr>
                     <tr>

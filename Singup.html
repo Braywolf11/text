@@ -19,17 +19,17 @@
                         </tr>
 
                         <tr>
-                            <td bgcolor= "#183E26"><b>Nombres:</b></td>
-                            <td bgcolor= "#fbfbfb"><b><input type="text" placeholder="Nombre" minlength="5" maxlength="30" pattern="[A-Za-z]{4-16}" ></b></td>
+                            <td bgcolor= "#183E26"><b>Nombres:</b><font color="red">*</font></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="text" name="Nombres" placeholder="Nombre" minlength="5" maxlength="30" pattern="[A-Za-z]{4-16}"  ></b></td>
                         </tr>
                         
                         <tr>
-                            <td bgcolor= "#183E26"><b>Apellidos:</b></td>
-                            <td bgcolor= "#fbfbfb"><b><input type="text" placeholder="Apellidos" minlength="5" maxlength="30" ></b></td>
+                            <td bgcolor= "#183E26"><b>Apellidos:</b><font color="red">*</font></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="text" name="Apellidos" placeholder="Apellidos" minlength="5" maxlength="30" pattern="[A-Za-z]{4-16}"></b></td>
                         </tr>
                         
                         <tr>
-                            <td bgcolor= "#183E26"><b>Tipo de Identificacion:</b></td>
+                            <td bgcolor= "#183E26"><b>Tipo de Identificacion:</b><font color="red">*</font></td>
                             <td bgcolor= "#fbfbfb"><select name="Tipos" >
                                 <option value="1">Cedula de Ciudadania</option>
                                 <option value="2">Tarjeta de Identidad</option>
@@ -39,29 +39,29 @@
                         </tr>
                         
                         <tr>
-                                <td bgcolor= "#183E26"><b>Nro. Identificacíon:</b></td>
-                                <td bgcolor= "#fbfbfb"><b><input type="text" placeholder="Nro" minlength="5" maxlength="30" ></b></td>
+                                <td bgcolor= "#183E26"><b>Nro. Identificacíon:</b><font color="red">*</font></td>
+                                <td bgcolor= "#fbfbfb"><b><input type="text" name="Nro" placeholder="Nro" minlength="5" maxlength="30" pattern="[0,9]{7-10}" title="solo se aceptan numeros" required></b></td>
                         </tr>
                         
                         <tr>
-                            <td bgcolor= "#183E26"><b>Genero:</b></td>
+                            <td bgcolor= "#183E26"><b>Genero:</b><font color="red">*</font></td>
                             <td bgcolor= "#fbfbfb"><b><input type="radio" name="Masculino"  value="Masculino" >Masculino</b><b><input type="radio" name="Masculino"  value="Femenino" >Femenino</b></td>
                         </tr>
                         
                         <tr>
-                            <td bgcolor= "#183E26"><b>Telefono:</b></td>
-                            <td bgcolor= "#fbfbfb"><b><input type="text" placeholder="Telefono" minlength="5" maxlength="8" ></b></td>
+                            <td bgcolor= "#183E26"><b>Telefono:</b><font color="red">*</font></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="text" name="Telefono" placeholder="Telefono" minlength="5" maxlength="8" pattern="[0,9] {7,12}" title="Soló se aceptan números" required></b></td>
                         </tr>
                         
                         <tr>
-                            <td bgcolor= "#183E26"><b>Celular:</b></td>
-                            <td bgcolor= "#fbfbfb"><b><input type="text" placeholder="Celular" minlength="5" maxlength="20" ></b></td>
+                            <td bgcolor= "#183E26"><b>Celular:</b><font color="red">*</font></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="text" name="Celular" placeholder="Celular" minlength="5" maxlength="20" pattern="[0,9]{7-12}" title="solo se aceptan numeros" required></b></td>
                         </tr>
                                
                         <tr>
-                            <td bgcolor= "#183E26"><b>Departamento de Nac.:</b></td>
+                            <td bgcolor= "#183E26"><b>Departamento de Nac.:</b><font color="red">*</font></td>
                                     <td bgcolor= "#fbfbfb"><b>
-                                        <select name="departamentos" >
+                                        <select name="departamentos" required>
                                             <option value="0"></option>
                                             <option value="1">Amazonas</option>
                                             <option value="2">Antioquia</option>
@@ -77,9 +77,9 @@
                         </tr>
                                 
                         <tr>
-                            <td bgcolor= "#183E26"><b>Ciudad de Nac.:</b></td>
+                            <td bgcolor= "#183E26"><b>Ciudad de Nac.:</b><font color="red">*</font></td>
                                     <td bgcolor= "#fbfbfb"><b>
-                                        <select name="departamentos" >
+                                        <select name="departamentos" required >
                                             <option value="0"></option>
                                             <option value="1">Tunja</option>
                                             <option value="2">Yopal</option>
@@ -101,35 +101,39 @@
                         </tr>
                                 
                         <tr>
-                            <td bgcolor= "#183E26"><b>Correo Electronico:</b></td>
-                            <td bgcolor= "#fbfbfb"><b><input type="email" placeholder="user@....com" minlength="5" maxlength="30" id="email" ></b></td>
+                            <td bgcolor= "#183E26"><b>Correo Electronico:</b><font color="red">*</font></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="email" name="Correo" placeholder="user@....com" minlength="5" maxlength="30" id="email" pattern="[A-Za-z0-9 ]{4-16}" required></b></td>
                         </tr>
                                
                         <tr>
-                            <td bgcolor= "#183E26"><b>Contraseña:</b></td>
-                            <input name="pass" onblur="if(this.value=='') { this.value = 'Contraseña' }" 
-                            onfocus="if(this.value=='Contraseña') { this.value = '' }" type="password" maxlength="20" value="Contraseña" />
-                            <td bgcolor= "#fbfbfb"><b><input type="password" placeholder="password" minlength="5" maxlength="30" >
-                                <div style="margin-top:15px;">
-                                        <input style="margin-left:20px;" type="checkbox" id="mostrar_contrasena" title="clic para mostrar contraseña"/>
-                                        &nbsp;&nbsp;Mostrar Contraseña</div></b></td>
+                            
+                            <td bgcolor= "#183E26"><b>Contraseña:</b><font color="red">*</font></td>
+                            <td bgcolor= "#183E26"><b><input type="password" name="Contraseña" placeholder="password" minlength="5" maxlength="30" required ></td>
+                                
+                            </td>
                         </tr>
                                
                         <tr>
-                            <td bgcolor= "#183E26"><b>Confirmar Contraseña:</b></td>
-                                    <td bgcolor= "#fbfbfb"><b><input type="password" placeholder="Confirmar" minlength="5" maxlength="30" ></b></td>
+                            <td bgcolor= "#183E26"><b>Confirmar Contraseña:</b><font color="red">*</font></td>
+                                    <td bgcolor= "#fbfbfb"><b><input type="password" name="Confirmar"placeholder="Confirmar" minlength="5" maxlength="30" pattern="[A-Za-z0-9]{4-16}" required></b></td>
                         </tr>
                                
                         <tr>
-                            <td bgcolor= "#183E26"><b>Foto:</b></td>
-                            <td bgcolor= "#fbfbfb"><b><input type="text" placeholder="Foto" minlength="5" maxlength="30" >
+                            <td bgcolor= "#183E26"><b>Foto:</b><font color="red">*</font></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="text" name="foto"placeholder="Foto" minlength="5" maxlength="30" required>
                             <input name="arch" type="file" size="2mb"></b><br></td>
                         </tr>
+                        <td colspan="2"><br>
+                            <center><input type="submit" value="REGISTRARME"><img src="icons/checked.png" width="40"></center><br>
+                            <center><input type="submit" value="BORRAR"><img src="icons/error.png" width="40"></center><br>
+                          
+                        </td>
                                
-                    </tr>
+                    </tr><br>
+                    
             </center>        
-    
+            
     </form>
-    
+   
 </body>
 </html>
