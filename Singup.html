@@ -9,7 +9,7 @@
     <script src="main.js"></script>
 </head>
 <body bgcolor= #196F3D >
-    <form name="form3" action="#" method="POST">
+    <form name="form3" action="validar2.php"  target="_BLANK" method="POST">
         <center><img src="icons/lock.png" width="100"></center>
            <center> <table aling="center" border="2">
                         <tr bgcolor= "#183E26">
@@ -20,12 +20,12 @@
 
                         <tr>
                             <td bgcolor= "#183E26"><b>Nombres:</b><font color="red">*</font></td>
-                            <td bgcolor= "#fbfbfb"><b><input type="text" name="Nombres" placeholder="Nombre" minlength="5" maxlength="30" pattern="[A-Za-z]{4-16}"  ></b></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="text" name="Nombres" placeholder="Nombre" minlength="5" maxlength="30" pattern="[A-Za-z]{4-16}"  required></b></td>
                         </tr>
                         
                         <tr>
                             <td bgcolor= "#183E26"><b>Apellidos:</b><font color="red">*</font></td>
-                            <td bgcolor= "#fbfbfb"><b><input type="text" name="Apellidos" placeholder="Apellidos" minlength="5" maxlength="30" pattern="[A-Za-z]{4-16}"></b></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="text" name="Apellidos" placeholder="Apellidos" minlength="5" maxlength="30" pattern="[A-Za-z]{4-16}" required></b></td>
                         </tr>
                         
                         <tr>
@@ -45,12 +45,12 @@
                         
                         <tr>
                             <td bgcolor= "#183E26"><b>Genero:</b><font color="red">*</font></td>
-                            <td bgcolor= "#fbfbfb"><b><input type="radio" name="Masculino"  value="Masculino" >Masculino</b><b><input type="radio" name="Masculino"  value="Femenino" >Femenino</b></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="radio" name="Masculino"  value="Masculino" >Masculino</b><b><input type="radio" name="Femenino"  value="Femenino" >Femenino</b></td>
                         </tr>
                         
                         <tr>
                             <td bgcolor= "#183E26"><b>Telefono:</b><font color="red">*</font></td>
-                            <td bgcolor= "#fbfbfb"><b><input type="text" name="Telefono" placeholder="Telefono" minlength="5" maxlength="8" pattern="[0,9] {7,12}" title="Soló se aceptan números" required></b></td>
+                            <td bgcolor= "#fbfbfb"><b><input type="text" name="Telefono" placeholder="Telefono" minlength="5" maxlength="7" pattern="[0,9]{7-8}" title="Soló se aceptan números" required></b></td>
                         </tr>
                         
                         <tr>
@@ -61,7 +61,7 @@
                         <tr>
                             <td bgcolor= "#183E26"><b>Departamento de Nac.:</b><font color="red">*</font></td>
                                     <td bgcolor= "#fbfbfb"><b>
-                                        <select name="departamentos" required>
+                                        <select name="Departamentos" required>
                                             <option value="0"></option>
                                             <option value="1">Amazonas</option>
                                             <option value="2">Antioquia</option>
@@ -79,7 +79,7 @@
                         <tr>
                             <td bgcolor= "#183E26"><b>Ciudad de Nac.:</b><font color="red">*</font></td>
                                     <td bgcolor= "#fbfbfb"><b>
-                                        <select name="departamentos" required >
+                                        <select name="Municipios" required >
                                             <option value="0"></option>
                                             <option value="1">Tunja</option>
                                             <option value="2">Yopal</option>
@@ -120,7 +120,7 @@
                                
                         <tr>
                             <td bgcolor= "#183E26"><b>Foto:</b><font color="red">*</font></td>
-                            <td bgcolor= "#fbfbfb"><b><input type="text" name="foto"placeholder="Foto" minlength="5" maxlength="30" required>
+                            <td bgcolor= "#fbfbfb"><b><input type="text" name="foto"placeholder="Foto" minlength="5" maxlength="30">
                             <input name="arch" type="file" size="2mb"></b><br></td>
                         </tr>
                         <td colspan="2"><br>
