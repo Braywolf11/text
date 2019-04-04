@@ -1,0 +1,170 @@
+<?php
+    echo " 1 ";
+    echo "<br>";
+    echo " 2 ";
+    echo "<br>";
+    echo " 3 ";
+    echo "<br>";
+    echo " 4 ";
+    echo "<br>";
+    echo " 5 ";
+    echo "<br>";
+    echo " 6 ";
+    echo "<br>";
+    echo " 7 ";
+    echo "<br>";
+    echo " 8 ";
+    echo "<br>";
+    echo " 9 ";
+    echo "<br>";
+    echo " 10";
+    echo "<br>";
+    echo "<hr>";
+    echo "<b>Imprecion de los numeros de el 1 - 10 </b>";
+    echo "<table border = '2'>";
+
+        for($i=1;$i<=10;$i++)
+        { 
+                    echo "<td>";
+                         echo "  ". $i ;
+                    echo "</td>";
+        }
+    echo "</table>";
+    echo "<hr>";
+    echo "<br><br>";
+
+    echo "<b>Inprecion de los numeros de el 1 - 10 </b><br><br>";
+    
+        $j=1;
+        while ($j <= 100) {
+            echo " <td> ";
+                echo $j. " ";
+            echo " </td> ";
+            $j=$j+1;
+        }
+    
+    echo "<hr>";
+    echo "<br><br>";
+    echo "<b>Imprecion de los numeros de el 1 - 10 con for </b>";
+    echo "<table border = '2'>";
+
+    $k=2;
+        for($i=1;$i<=100;$i=$i+2)
+        { 
+            
+             echo "<tr>";
+                    echo "<td>";
+                         echo "  ". $i . " - ";
+                         echo "  ". $k;
+                    echo "</td>";
+            echo "</tr>";
+            $k=$k+2;
+        
+        }
+    echo "</table>";
+    echo "<hr>";
+    echo "<br><br>";
+    echo "<b>Inprecion de los numeros de el 1 - 10 </b><br><br>";
+    echo "<table border = '2'>";
+        $j=1;
+        while ($j <= 10) {
+            echo " <td> ". rand(0 , 100). "</td>";
+            $j=$j+1;
+        }
+    echo "</table>";
+    echo "<hr>";
+    echo "<br><br>";
+    
+        $acum=0;
+         for ($i=1;$i<=100;$i++){
+                echo " <td> ";
+                    echo $i. "-";
+                echo " </td> ";
+        $acum = $acum + $i;
+
+    }
+    echo "<br><br> La suma es : $acum";
+    echo "<hr>";
+    echo "<br><br>"; 
+    echo "<b>Inprecion de los numeros de el 1 - 10 </b><br><br>";
+    echo "<table border = '2'>";
+    for($i=1;$i<=100;$i++)
+    {
+
+        if($i%3==0)
+        {
+                
+            echo "<td >";
+                 echo " ". $i ;
+            echo "</td>";
+        }       
+        else
+        {
+                
+            
+                
+        }
+}
+    echo "</table>";
+    echo "<hr>";
+    echo "<br><br>";
+    echo "<b>Inprecion de los numeros de el 1 - 10 </b><br><br>";
+    echo "<table border = '2'>";
+        $j=1;
+        while ($j <= 10) {
+            $rand= rand(0 , 100);
+            echo " <td> ". $rand. "</td>";
+            $j=$j+1;
+            if($rand%2==0)
+            {
+                $total+=$rand;
+            }else 
+            {
+                $resultado+=$rand;
+
+            }
+        }
+        
+    echo "</table>";
+    echo " <br>el total de los numeros pares es : ".$total;
+    echo " <br>el total de los numeros Inpares es : ".$resultado;
+    echo "<hr>";
+    echo "<br><br>";
+    echo "<b>Inprecion de los numeros de el 1 - 10 </b><br><br>";
+    echo "<table border = '2'>";
+        $j=1;
+        while ($j <= 10) {
+            $rand= rand(-100 , 100);
+            echo " <td> ". $rand. "</td>";
+            $j=$j+1;
+            if($rand%2==0)
+            {
+                if($rand<0)
+                {
+                    $total+=$rand;
+                }else
+                {
+                    $totaln+=$rand;
+                }
+                
+            }else 
+            {
+                if($rand<0)
+                {
+                    $resultado+=$rand;
+                }else
+                {
+                    $resultadon+=$rand;
+                }
+            }
+        }
+        
+    echo "</table>";
+    echo " <br>el total de los numeros pares es : ".$total;
+    echo " <br>el total de los numeros pares es : ".$totaln;
+    echo " <br>el total de los numeros Inpares es : ".$resultado;
+    echo " <br>el total de los numeros Inpares es : ".$resultadon;
+
+
+
+    ?>
